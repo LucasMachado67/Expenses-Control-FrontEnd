@@ -1,0 +1,32 @@
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Month Balance</h5>
+    <h6 class="card-subtitle mb-2 text-body-secondary">
+      Incomes: {{ this.totalIncomes }} R$
+    </h6>
+    <h6 class="card-subtitle mb-2 text-body-secondary">
+      Expenses: {{ this.totalExpenses }} R$
+    </h6>
+    <h6 class="card-subtitle mb-2 text-body-secondary">
+      Year: {{ balance.year }}
+    </h6>
+    <h6 class="card-subtitle mb-2 text-body-secondary">
+      Month: {{ balance.month }}
+    </h6>
+    <h6 class="card-subtitle mb-2 text-body-secondary">
+      Balance: {{ this.totalBalance }} R$
+    </h6>
+  </div>
+</div>
+
+<div class="container">
+  <div class="title">
+    <h1>Graphics</h1>
+  </div>
+  
+  <div class="display">
+    <div class="card flex justify-center">
+      <p-chart type="pie" [data]="data" [options]="options" class="w-full md:w-[30rem]" />
+    </div>
+  </div>
+</div>

@@ -1,0 +1,64 @@
+<div class="container">
+
+    <div class="display">
+        <h1>Create Expense</h1>
+
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Expense Name" required [(ngModel)]="expense.expenseName">
+            <label for="floatingInput">Expense Name</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingDescription" placeholder="Description" required [(ngModel)]="expense.description" >
+            <label for="floatingDescription">Description</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="number" class="form-control" id="floatingInput" placeholder="Quantity" required [(ngModel)]="expense.quantity">
+            <label for="floatingInput">Quantity</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="number" class="form-control" id="floatingInput" placeholder="Amount" required [(ngModel)]="expense.amount">
+            <label for="floatingInput">Amount</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="number" class="form-control" id="floatingInput" placeholder="Year" required [value]="expense.year" disabled>
+            <label for="floatingInput">Year</label>
+          </div>
+
+          <div class="mb-3">
+
+              <select class="form-select" aria-label="Default select example" type="number" required [(ngModel)]="expense.month" disabled>
+                <option value="0">Janeiro</option>
+                <option value="1">Fevereiro</option>
+                <option value="2">Março</option>
+                <option value="3">Abril</option>
+                <option value="4">Maio</option>
+                <option value="5">Junho</option>
+                <option value="6">Julho</option>
+                <option value="7">Agosto</option>
+                <option value="8">Setembro</option>
+                <option value="9">Outubro</option>
+                <option value="10">Novembro</option>
+                <option value="11">Dezembro</option>
+              </select>
+
+            </div>
+            <div class="mb-3">
+                <select class="form-select" aria-label="Default select example" required [(ngModel)]="expense.category">
+                  <option value = "" disabled selected>Select Category</option>
+                  <option value="Emergency">Emergency</option>
+                  <option value="Food">Food</option>
+                  <option value="Transport">Transport</option>
+                  <option value="Needs">Needs</option>
+                  <option value="Subscriptions">Subscriptions</option>
+                  <option value="Leisure">Leisure</option>
+                  <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <p-button label="Success" severity="success" (onClick)="create()"/>
+    </div>  
+   
+</div>

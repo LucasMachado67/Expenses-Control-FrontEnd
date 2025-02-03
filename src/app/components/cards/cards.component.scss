@@ -1,0 +1,23 @@
+
+
+.cards{
+    margin: 10px 50px 0px 50px;
+    width: 1435px;
+    padding: 50px;
+    height: 600px;
+
+    .IncomeAndExpense{
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-between;
+        
+        .card{
+            width:48%;
+        }
+    }
+}
+
+p-button{
+    margin-left: 10px;
+    
+}

@@ -1,0 +1,44 @@
+<div class="cards">
+    <div class="card">
+        <div class="card-header">
+          Resume
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Balance</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">Total: {{this.totalBalance}}</h6>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="/balance" class="btn btn-primary">Details</a>
+        </div>
+      </div>
+
+      <div class="IncomeAndExpense">
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Incomes</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Total: {{this.totalIncomes}} R$</h6>
+              <p class="card-text">See in details everything about your Incomes. As well as update, delete and create.</p>
+              <a href="/incomes" class="card-link">
+                <p-button label="All Incomes" type="" />
+              </a>
+              <a href="/incomes/new">
+                <p-button label="New Income" variant="outlined" severity="info" />
+              </a>
+            </div>
+          </div>
+    
+          <div class="card" >
+            <div class="card-body">
+              <h5 class="card-title">Expenses</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Total: {{this.totalExpenses}} R$</h6>
+              <p class="card-text">See in details everything about your Expenses. As well as update, delete and create.</p>
+              <a href="/expenses" class="card-link">
+                <p-button label="All Expenses" type="" />
+              </a>
+              <a href="/expenses/new">
+                <p-button label="New Expense" variant="outlined" severity="info" />
+              </a>
+            </div>
+          </div>
+      </div>
+</div>
